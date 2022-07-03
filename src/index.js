@@ -1,4 +1,3 @@
-console.log("Hello World!");
 import "./script/index.js";
+import "./script/init-images.js";
 import "./style/index.scss";
-import "./style/typography.scss";

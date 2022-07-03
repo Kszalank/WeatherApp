@@ -9,7 +9,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
+    <section class="top">
+        <div class="top--cloud">
+            <p class="top--cloud__cloudiness"><img id="cloud" alt="cloud-icon" />75%</p>
+        </div>
+        <div class="top--wind">
+            <p class="top--wind__speed"><img id="wind" alt="wind-icon" />1.5m/s</p>
+        </div>
+        <div class="top--humidity">
+            <p class="top--humidity__percentage"><img id="humidity" alt="humidity-icon" />86%</p>
+        </div>
+    </section>
+
+    <section class="city">
+        <p class="city__name">Sydney</p>
+        <p class="city__weather">Sunny</p>
+        <p class="city__temperature">20°</p>
+        <input class="city__selection" type="text" placeholder="Enter city name...">
+    </section>
+
+    <section class="next-days">
+        <p class="title">TOMORROW</p>
+        <div class="tomorrow">
+            <p class="tomorrow__temperature">13°</p>
+            <p class="tomorrow__cloudiness"><img id="cloud" alt="cloud-icon" />75%</p>
+            <p class="tomorrow__wind-speed"> <img id="wind" alt="wind-icon" />1.5m/s</p>
+            <p class="tomorrow__humidity"> <img id="humidity" alt="humidity-icon" />86%</p>
+        </div>
+        <p class="title">IN 2 DAYS</p>
+        <div class="in-2-days">
+            <p class="in-2-days__temperature">13°</p>
+            <p class="in-2-days__cloudiness"><img id="cloud" alt="cloud-icon" />75%</p>
+            <p class="in-2-days__wind-speed"><img id="wind" alt="wind-icon" />1.5m/s</p>
+            <p class="in-2-days__humidity"><img id="humidity" alt="humidity-icon" />86%</p>
+        </div>
+        <p class="title">IN 3 DAYS</p>
+        <div class="in-3-days">
+            <p class="in-3-days__temperature">13°</p>
+            <p class="in-3-days__cloudiness"><img id="cloud" alt="cloud-icon" />75%</p>
+            <p class="in-3-days__wind-speed"><img id="wind" alt="wind-icon" />1.5m/s</p>
+            <p class="in-3-days__humidity"><img id="humidity" alt="humidity-icon" />86%</p>
+        </div>
+    </section>
 </body>
 
 </html>
