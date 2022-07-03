@@ -1,44 +1,50 @@
+:root {
+  --font-family: "Montserrat";
+  --font-style: normal;
+  --font-color: #000000;
+}
+
 .h1 {
-  font-family: "Montserrat";
-  font-style: normal;
+  font-family: var(--font-family);
+  font-style: var(--font-style);
   font-weight: 400;
   font-size: 32px;
   line-height: 39px;
-  color: #000000;
+  color: var(--font-color);
 }
 
 .h2 {
-  font-family: "Montserrat";
-  font-style: normal;
+  font-family: var(--font-family);
+  font-style: var(--font-style);
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
-  color: #000000;
+  color: var(--font-color);
 }
 
 .h3 {
-  font-family: "Montserrat";
-  font-style: normal;
+  font-family: var(--font-family);
+  font-style: var(--font-style);
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
-  color: #000000;
+  color: var(--font-color);
 }
 
 .text {
-  font-family: "Montserrat";
-  font-style: normal;
+  font-family: var(--font-family);
+  font-style: var(--font-style);
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #000000;
+  color: var(--font-color);
 }
 
 .label {
-  font-family: "Montserrat";
-  font-style: normal;
+  font-family: var(--font-family);
+  font-style: var(--font-style);
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
-  color: #000000;
+  color: var(--font-color);
 }
