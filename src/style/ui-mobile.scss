@@ -11,27 +11,6 @@
 
 .top--cloud,
 .top--wind,
-.top--humidity,
-.tomorrow__cloudiness,
-.tomorrow__wind-speed,
-.tomorrow__humidity,
-.in-2-days__cloudiness,
-.in-2-days__wind-speed,
-.in-2-days__humidity,
-.in-3-days__cloudiness,
-.in-3-days__wind-speed,
-.in-3-days__humidity {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  opacity: 0.75;
-}
-
-.top--cloud,
-.top--wind,
 .top--humidity {
   position: relative;
   width: 33%;
@@ -54,34 +33,15 @@
 
   &__name {
     margin: 10px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 39px;
-    color: #ffffff;
   }
 
   &__weather {
     margin: 10px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    color: #ffffff;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.25);
   }
 
   &__temperature {
     margin: 10px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 100;
-    font-size: 84px;
-    line-height: 102px;
-    letter-spacing: -0.05em;
-    color: #ffffff;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.25);
   }
 
@@ -95,12 +55,6 @@
     border-radius: 12px;
     border-color: white;
     padding: 10px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #000000;
   }
 }
 
@@ -113,26 +67,14 @@
   justify-content: center;
 
   &__temperature {
-    font-family: "Montserrat";
     position: relative;
     margin-top: 16px;
     margin-bottom: 10px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    color: #ffffff;
   }
 }
 
 .title {
   margin-bottom: 0px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 
 .tomorrow *,
