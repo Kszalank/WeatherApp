@@ -2,15 +2,16 @@ import cloud from "../img/cloud.svg";
 import humidity from "../img/humidity.svg";
 import wind from "../img/wind.svg";
 
-var windy = document.querySelectorAll("#wind");
-windy.forEach(function (element) {
+const windy = document.querySelectorAll(".wind");
+const cloudy = document.querySelectorAll(".cloud");
+const humidities = document.querySelectorAll(".humidity");
+
+windy.forEach((element) => {
   element.src = wind;
 });
-var cloudy = document.querySelectorAll("#cloud");
-cloudy.forEach(function (element) {
+cloudy.forEach((element) => {
   element.src = cloud;
 });
-var humidities = document.querySelectorAll("#humidity");
-humidities.forEach(function (element) {
+humidities.forEach((element) => {
   element.src = humidity;
 });
