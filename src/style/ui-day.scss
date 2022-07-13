@@ -67,6 +67,7 @@
 .in-2-days,
 .in-3-days {
   display: flex;
+  flex-wrap: wrap;
   border-bottom: 2px white solid;
   width: 100%;
   margin: 0;
@@ -91,4 +92,70 @@
 .title {
   margin-bottom: 0;
   margin-left: 4%;
+}
+
+.label {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .top {
+    width: 50%;
+  }
+
+  .top .wind,
+  .top .cloud,
+  .top .humidity {
+    height: 30px;
+  }
+  .title {
+    height: 35px;
+    text-align: end;
+    width: 45%;
+    justify-content: center;
+  }
+
+  .next-days {
+    display: flex;
+  }
+
+  .tomorrow,
+  .in-2-days,
+  .in-3-days {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: none;
+
+    &__temperature {
+      width: 30%;
+      border-right: none;
+      justify-content: center;
+      margin-bottom: 0px;
+    }
+    &__cloudiness,
+    &__wind-speed,
+    &__humidity {
+      text-align: center;
+      justify-content: center;
+      width: 100%;
+      border-right: 2px white solid;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+  }
+  .in-3-days {
+    &__cloudiness,
+    &__wind-speed,
+    &__humidity {
+      border-right: none;
+    }
+  }
+  .city {
+    &__selection {
+      left: 38.5%;
+      width: 23%;
+    }
+  }
 }
