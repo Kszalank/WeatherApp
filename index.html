@@ -3,13 +3,57 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WeatherApp</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
+    <section class="top">
+        <div class="top--cloud text">
+            <p class="top--cloud__cloudiness"><img alt="cloud-icon" class="cloud" />75%</p>
+        </div>
+        <div class="top--wind text">
+            <p class="top--wind__speed"><img alt="wind-icon" class="wind" />1.5m/s</p>
+        </div>
+        <div class="top--humidity text">
+            <p class="top--humidity__percentage"><img alt="humidity-icon" class="humidity" />86%
+            </p>
+        </div>
+    </section>
+
+    <section class="city">
+        <p class="city__name h1">Sydney</p>
+        <p class="city__weather h2">Sunny</p>
+        <p class="city__temperature h3">20°</p>
+        <input class="city__selection selector" type="text" placeholder="Enter city name...">
+    </section>
+
+    <section class="next-days">
+        <p class="title label">TOMORROW</p>
+        <div class="tomorrow">
+            <p class="tomorrow__temperature h4">13°</p>
+            <p class="tomorrow__cloudiness text"><img alt="cloud-icon" class="cloud" />75%</p>
+            <p class="tomorrow__wind-speed text"> <img alt="wind-icon" class="wind" />1.5m/s</p>
+            <p class="tomorrow__humidity text"> <img alt="humidity-icon" class="humidity" />86%</p>
+        </div>
+        <p class="title label">IN 2 DAYS</p>
+        <div class="in-2-days">
+            <p class="in-2-days__temperature h4">13°</p>
+            <p class="in-2-days__cloudiness text"><img alt="cloud-icon" class="cloud" />75%</p>
+            <p class="in-2-days__wind-speed text"><img alt="wind-icon" class="wind" />1.5m/s</p>
+            <p class="in-2-days__humidity text"><img alt="humidity-icon" class="humidity" />86%</p>
+        </div>
+        <p class="title label">IN 3 DAYS</p>
+        <div class="in-3-days">
+            <p class="in-3-days__temperature h4">13°</p>
+            <p class="in-3-days__cloudiness text"><img alt="cloud-icon" class="cloud" />75%</p>
+            <p class="in-3-days__wind-speed text"><img alt="wind-icon" class="wind" />1.5m/s</p>
+            <p class="in-3-days__humidity text"><img alt="humidity-icon" class="humidity" />86%</p>
+        </div>
+    </section>
 </body>
 
 </html>
