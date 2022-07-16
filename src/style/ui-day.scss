@@ -26,6 +26,7 @@
   top: 5px;
   margin-right: 10px;
 }
+
 .city {
   position: relative;
   display: flex;
@@ -97,6 +98,7 @@
 .label {
   width: 100%;
 }
+
 @media (min-width: 1024px) {
   .top {
     width: 50%;
@@ -107,6 +109,7 @@
   .top .humidity {
     height: 30px;
   }
+
   .title {
     height: 35px;
     text-align: end;
@@ -132,6 +135,7 @@
       justify-content: center;
       margin-bottom: 0px;
     }
+
     &__cloudiness,
     &__wind-speed,
     &__humidity {
@@ -145,6 +149,7 @@
       padding-bottom: 16px;
     }
   }
+
   .in-3-days {
     &__cloudiness,
     &__wind-speed,
@@ -152,6 +157,7 @@
       border-right: none;
     }
   }
+
   .city {
     &__selection {
       left: 38.5%;
