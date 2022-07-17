@@ -113,7 +113,7 @@
   .title {
     height: 35px;
     text-align: end;
-    width: 45%;
+    width: 35%;
     justify-content: center;
   }
 
@@ -128,25 +128,27 @@
     flex-direction: row;
     flex-wrap: wrap;
     border-bottom: none;
+    justify-content: center;
 
     &__temperature {
       width: 30%;
       border-right: none;
-      justify-content: center;
       margin-bottom: 0px;
+      margin-left: 15px;
     }
 
     &__cloudiness,
     &__wind-speed,
     &__humidity {
       text-align: center;
-      justify-content: center;
+      justify-content: start;
       width: 100%;
       border-right: 2px white solid;
       margin-top: 0px;
       margin-bottom: 0px;
       padding-top: 16px;
       padding-bottom: 16px;
+      padding-left: 43%;
     }
   }
 
