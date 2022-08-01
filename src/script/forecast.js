@@ -3,9 +3,6 @@ export const weather = {
   fetchWeather: function (city) {
     const baseUrl = `https://api.openweathermap.org/data/2.5/forecast?cnt=72&units=metric&appid=${this.apiKey}`;
     fetch(`${baseUrl}&q=${city}`)
-      // const response = await fetch (`${baseUrl}&q=${city}`);
-      // const weather = await response.json();
-      // this.displayWeather(weather);
       .then((response) => response.json())
       .then((data) => this.displayWeather(data));
   },
