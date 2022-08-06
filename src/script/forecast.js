@@ -1,6 +1,7 @@
 import { baseUrl } from "./constans";
 import { updateBackground } from "./backgroundUpdate";
 import { currentTime } from "./constans";
+import { storeCity } from "./localStorage";
 export { fetchWeather };
 
 function fetchWeather(url) {
@@ -14,6 +15,7 @@ function displayWeather(data) {
   const sunrise = data.city.sunrise;
   updateBackground(currentTime, sunrise, sunset);
   const name = data.city.name;
+  storeCity(name);
   const description = data.list[0].weather[0].description;
   const tempToday = data.list[0].main.temp;
   const tempTomorrow = data.list[8].main.temp;
