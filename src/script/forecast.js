@@ -1,5 +1,6 @@
 import { baseUrl } from "./constans";
-
+import { updateBackground } from "./backgroundUpdate";
+import { currentTime } from "./constans";
 export { fetchWeather };
 
 function fetchWeather(url) {
@@ -9,6 +10,9 @@ function fetchWeather(url) {
 }
 
 function displayWeather(data) {
+  const sunset = data.city.sunset;
+  const sunrise = data.city.sunrise;
+  updateBackground(currentTime, sunrise, sunset);
   const name = data.city.name;
   const description = data.list[0].weather[0].description;
   const tempToday = data.list[0].main.temp;
@@ -59,6 +63,7 @@ function search() {
   const city = document.querySelector(".city__selection").value;
   fetchWeather(`&cnt=72&units=metric&q=${city}`);
 }
+
 document.querySelector(".city__selection").addEventListener("keyup", function (event) {
   if (event.key == "Enter") {
     search();
