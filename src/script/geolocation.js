@@ -1,5 +1,5 @@
 import { fetchWeather } from "./forecast";
-
+import { fail } from "./localStorage";
 function searchFromGeolocation({ latitude, longitude }) {
   fetchWeather(`&lat=${latitude}&lon=${longitude}&units=metric`);
 }
@@ -10,7 +10,7 @@ function success(data) {
 
 function getLocation() {
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(success, console.error);
+    navigator.geolocation.getCurrentPosition(success, fail);
   }
 }
 
